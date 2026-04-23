@@ -1,0 +1,28 @@
+{
+  "project_name": "war_sentiment_lstm_pair_selected",
+  "model_definition": "Baseline is raw baseline_lstm. Sent is 25% baseline_lstm probability plus 75% sentiment_lstm probability.",
+  "baseline": {
+    "Pre-war": {
+      "accuracy": 0.6144578313253012,
+      "predictions": 83,
+      "total_possible": 83
+    },
+    "War": {
+      "accuracy": 0.6067415730337079,
+      "predictions": 89,
+      "total_possible": 89
+    }
+  },
+  "sent": {
+    "Pre-war": {
+      "accuracy": 0.6385542168674698,
+      "predictions": 83,
+      "total_possible": 83
+    },
+    "War": {
+      "accuracy": 0.7078651685393258,
+      "predictions": 89,
+      "total_possible": 89
+    }
+  }
+}

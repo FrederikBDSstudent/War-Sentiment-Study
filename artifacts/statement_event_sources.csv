@@ -1,0 +1,9 @@
+date,source_type,event_type,weight,strike_weight,shipping_weight,hormuz_weight,sanctions_weight,title,url
+2025-02-04,white_house,maximum_pressure,1.0,0.0,0.0,0.0,1.0,White House restores maximum pressure on Iran,https://www.whitehouse.gov/fact-sheets/2025/02/fact-sheet-president-donald-j-trump-restores-maximum-pressure-on-iran/
+2025-02-24,treasury,shadow_fleet_sanctions,1.1,0.0,0.4,0.0,1.0,Treasury targets Iran shadow fleet,https://home.treasury.gov/news/press-releases/sb0026
+2025-03-13,treasury,oil_minister_sanctions,1.1,0.0,0.2,0.0,1.0,Treasury sanctions Iranian oil minister and fleet operators,https://home.treasury.gov/news/press-releases/sb0049
+2025-06-13,cnbc,strike_escalation,1.5,1.0,0.2,0.3,0.0,Oil prices surge after Israeli strikes on Iran,https://www.cnbc.com/2025/06/13/asia-pacific-markets-live-us-china-trade.html
+2025-06-20,treasury,shipping_enforcement,1.0,0.0,1.0,0.4,0.8,Treasury sanctions Houthi oil trading and shipping,https://home.treasury.gov/news/press-releases/sb0174
+2025-06-22,cnbc,hormuz_closure_threat,1.7,0.2,0.8,1.0,0.0,Iran parliament backs blocking Strait of Hormuz,https://www.cnbc.com/2025/06/23/irans-parliament-approves-blocking-strait-of-hormuz.html
+2025-07-02,reuters_reported,mine_preparation_alarm,1.4,0.0,0.8,1.0,0.0,Reuters-reported US alarm over Iranian mine preparations near Hormuz,https://www.iranintl.com/en/202507029554
+2025-07-05,opec,opec_supply_policy,0.8,0.0,0.0,0.0,0.0,OPEC+ reaffirms market stability,https://www.opec.org/pr-detail/569-05-july-2025.html

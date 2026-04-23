@@ -1,0 +1,56 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="540" viewBox="0 0 1400 540" role="img" aria-labelledby="title desc">
+  <title id="title">Benchmark Scorecards</title>
+  <desc id="desc">Scorecards summarizing baseline and sent benchmark accuracy before and during war.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f7f4ec"/>
+      <stop offset="100%" stop-color="#fffdf8"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#173a36" flood-opacity="0.10"/>
+    </filter>
+  </defs>
+
+  <rect width="1400" height="540" fill="url(#bg)"/>
+  <text x="700" y="64" text-anchor="middle" font-family="Georgia, 'Times New Roman', serif" font-size="28" fill="#244844">Benchmark Result</text>
+  <text x="700" y="98" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#59716d">Core 5-name matched study, 7-day stock return minus XLE return</text>
+
+  <g filter="url(#shadow)">
+    <rect x="90" y="150" rx="26" ry="26" width="280" height="260" fill="#f6fbf9" stroke="#2f6b5e" stroke-width="2"/>
+    <text x="230" y="194" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#2f6b5e">Baseline</text>
+    <text x="230" y="232" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#5f7571">Pre-war</text>
+    <text x="230" y="300" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700" fill="#173a36">61.5%</text>
+    <text x="230" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#6e8480">83 / 83 predictions</text>
+    <text x="230" y="374" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#6e8480">same target, same core universe</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="410" y="150" rx="26" ry="26" width="280" height="260" fill="#fff7f6" stroke="#b54b47" stroke-width="2"/>
+    <text x="550" y="194" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#b54b47">Sent</text>
+    <text x="550" y="232" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#7f6a69">Pre-war</text>
+    <text x="550" y="300" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700" fill="#5a1f1c">63.9%</text>
+    <text x="550" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#8f7775">83 / 83 predictions</text>
+    <text x="550" y="374" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#8f7775">small edge before the war</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="730" y="150" rx="26" ry="26" width="280" height="260" fill="#f6fbf9" stroke="#2f6b5e" stroke-width="2"/>
+    <text x="870" y="194" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#2f6b5e">Baseline</text>
+    <text x="870" y="232" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#5f7571">War</text>
+    <text x="870" y="300" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700" fill="#173a36">60.7%</text>
+    <text x="870" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#6e8480">89 / 89 predictions</text>
+    <text x="870" y="374" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#6e8480">baseline stays broadly stable</text>
+  </g>
+
+  <g filter="url(#shadow)">
+    <rect x="1050" y="150" rx="26" ry="26" width="280" height="260" fill="#fff7f6" stroke="#b54b47" stroke-width="2"/>
+    <text x="1190" y="194" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="18" font-weight="700" fill="#b54b47">Sent</text>
+    <text x="1190" y="232" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#7f6a69">War</text>
+    <text x="1190" y="300" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="56" font-weight="700" fill="#5a1f1c">70.8%</text>
+    <text x="1190" y="340" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#8f7775">89 / 89 predictions</text>
+    <text x="1190" y="374" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14" fill="#8f7775">largest gap appears in the war regime</text>
+  </g>
+
+  <line x1="230" y1="452" x2="1190" y2="452" stroke="#d8d1c3" stroke-width="2"/>
+  <text x="700" y="492" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="16" fill="#45605c">Interpretation: the text-aware model adds most value when the market is repricing supply-risk language rather than only reading market structure.</text>
+</svg>

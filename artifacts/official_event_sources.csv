@@ -1,0 +1,7 @@
+date,source_type,event_type,weight,title,url
+2025-02-04,white_house,sanctions_policy,1.2,NSPM-2 restores maximum pressure on Iran,https://www.whitehouse.gov/presidential-actions/2025/02/national-security-presidential-memorandum-nspm-2/
+2025-02-24,treasury,sanctions_oil,1.1,Treasury imposes additional sanctions on Iran's shadow fleet,https://home.treasury.gov/news/press-releases/sb0026
+2025-03-13,treasury,sanctions_oil,1.2,Treasury sanctions Iranian oil minister and shadow fleet operators,https://home.treasury.gov/news/press-releases/sb0049
+2025-06-12,white_house,conflict_escalation,1.4,White House statement after Israeli action against Iran,https://www.whitehouse.gov/briefings-statements/2025/06/statement-from-secretary-of-state-marco-rubio/
+2025-06-20,treasury,shipping_enforcement,1.0,Treasury sanctions Houthi illicit oil trading and shipping,https://home.treasury.gov/news/press-releases/sb0174
+2025-07-05,opec,opec_supply_policy,0.9,OPEC+ adjusts production and reaffirms market stability,https://www.opec.org/pr-detail/569-05-july-2025.html

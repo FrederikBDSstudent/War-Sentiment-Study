@@ -1,0 +1,9 @@
+{
+  "project_name": "war_sentiment_lstm_pair",
+  "reference_cutoff": "2025-06-13",
+  "baseline_model_path": "artifacts/models/war_sentiment_lstm_pair_baseline_reference.pt",
+  "sent_model_path": "artifacts/models/war_sentiment_lstm_pair_sent_reference.pt",
+  "ticker_count": 5,
+  "baseline_sequence_feature_count": 58,
+  "sent_static_feature_count": 22
+}

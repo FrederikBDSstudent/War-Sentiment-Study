@@ -1,0 +1,1253 @@
+{
+  "project_name": "war_sentiment_lstm_pair",
+  "method": "Normalized first-layer weight mass times transformed-feature variation on a pre-war reference fit",
+  "reference_cutoff": "2025-06-13",
+  "baseline_sequence_weights": [
+    {
+      "model": "Baseline",
+      "feature": "statement_shipping_weight_3d",
+      "path": "sequence",
+      "raw_weight": 16.42341423034668,
+      "activity": 1.5377660989761353,
+      "effective_weight": 25.255369186401367,
+      "weight_share": 0.029290806502103806
+    },
+    {
+      "model": "Baseline",
+      "feature": "statement_event_weight",
+      "path": "sequence",
+      "raw_weight": 15.907442092895508,
+      "activity": 1.3983324766159058,
+      "effective_weight": 22.243892669677734,
+      "weight_share": 0.025798140093684196
+    },
+    {
+      "model": "Baseline",
+      "feature": "statement_sanctions_weight_3d",
+      "path": "sequence",
+      "raw_weight": 16.123661041259766,
+      "activity": 1.368342399597168,
+      "effective_weight": 22.06268882751465,
+      "weight_share": 0.025587983429431915
+    },
+    {
+      "model": "Baseline",
+      "feature": "statement_event_weight_3d",
+      "path": "sequence",
+      "raw_weight": 14.91662311553955,
+      "activity": 1.4002894163131714,
+      "effective_weight": 20.887590408325195,
+      "weight_share": 0.02422512136399746
+    },
+    {
+      "model": "Baseline",
+      "feature": "filing_count_5d",
+      "path": "sequence",
+      "raw_weight": 17.203292846679688,
+      "activity": 1.0439082384109497,
+      "effective_weight": 17.95865821838379,
+      "weight_share": 0.020828189328312874
+    },
+    {
+      "model": "Baseline",
+      "feature": "UUP_ret_5",
+      "path": "sequence",
+      "raw_weight": 17.66977882385254,
+      "activity": 1.0100347995758057,
+      "effective_weight": 17.847091674804688,
+      "weight_share": 0.020698795095086098
+    },
+    {
+      "model": "Baseline",
+      "feature": "ret_10",
+      "path": "sequence",
+      "raw_weight": 17.528217315673828,
+      "activity": 0.9979932904243469,
+      "effective_weight": 17.493043899536133,
+      "weight_share": 0.020288176834583282
+    },
+    {
+      "model": "Baseline",
+      "feature": "beta_oil_20",
+      "path": "sequence",
+      "raw_weight": 17.30622673034668,
+      "activity": 1.0038843154907227,
+      "effective_weight": 17.373449325561523,
+      "weight_share": 0.0201494712382555
+    },
+    {
+      "model": "Baseline",
+      "feature": "avg_text_length",
+      "path": "sequence",
+      "raw_weight": 16.560543060302734,
+      "activity": 1.0458513498306274,
+      "effective_weight": 17.319866180419922,
+      "weight_share": 0.02008732780814171
+    },
+    {
+      "model": "Baseline",
+      "feature": "filing_count",
+      "path": "sequence",
+      "raw_weight": 16.576995849609375,
+      "activity": 1.0409504175186157,
+      "effective_weight": 17.255830764770508,
+      "weight_share": 0.02001306042075157
+    },
+    {
+      "model": "Baseline",
+      "feature": "filing_periodic_share",
+      "path": "sequence",
+      "raw_weight": 15.616975784301758,
+      "activity": 1.099920630455017,
+      "effective_weight": 17.177433013916016,
+      "weight_share": 0.019922135397791862
+    },
+    {
+      "model": "Baseline",
+      "feature": "^VIX_ret_5",
+      "path": "sequence",
+      "raw_weight": 16.50138282775879,
+      "activity": 1.0346349477767944,
+      "effective_weight": 17.072906494140625,
+      "weight_share": 0.019800907000899315
+    },
+    {
+      "model": "Baseline",
+      "feature": "filing_8k_share",
+      "path": "sequence",
+      "raw_weight": 16.2983341217041,
+      "activity": 1.0461567640304565,
+      "effective_weight": 17.050613403320312,
+      "weight_share": 0.01977505162358284
+    },
+    {
+      "model": "Baseline",
+      "feature": "rsi_14",
+      "path": "sequence",
+      "raw_weight": 17.0155029296875,
+      "activity": 1.0011417865753174,
+      "effective_weight": 17.034931182861328,
+      "weight_share": 0.0197568628937006
+    },
+    {
+      "model": "Baseline",
+      "feature": "volume_z_20",
+      "path": "sequence",
+      "raw_weight": 17.02037811279297,
+      "activity": 1.0007224082946777,
+      "effective_weight": 17.032672882080078,
+      "weight_share": 0.01975424401462078
+    },
+    {
+      "model": "Baseline",
+      "feature": "novelty_mean",
+      "path": "sequence",
+      "raw_weight": 16.448368072509766,
+      "activity": 1.0348821878433228,
+      "effective_weight": 17.022123336791992,
+      "weight_share": 0.019742010161280632
+    },
+    {
+      "model": "Baseline",
+      "feature": "macd_diff",
+      "path": "sequence",
+      "raw_weight": 16.548137664794922,
+      "activity": 1.0149544477462769,
+      "effective_weight": 16.79560661315918,
+      "weight_share": 0.0194792989641428
+    },
+    {
+      "model": "Baseline",
+      "feature": "gpr_threat_share",
+      "path": "sequence",
+      "raw_weight": 16.810081481933594,
+      "activity": 0.9965594410896301,
+      "effective_weight": 16.75224494934082,
+      "weight_share": 0.019429007545113564
+    },
+    {
+      "model": "Baseline",
+      "feature": "vol_10",
+      "path": "sequence",
+      "raw_weight": 16.822195053100586,
+      "activity": 0.9954142570495605,
+      "effective_weight": 16.745052337646484,
+      "weight_share": 0.019420666620135307
+    },
+    {
+      "model": "Baseline",
+      "feature": "ret_3",
+      "path": "sequence",
+      "raw_weight": 16.698530197143555,
+      "activity": 1.0002422332763672,
+      "effective_weight": 16.70257568359375,
+      "weight_share": 0.019371403381228447
+    },
+    {
+      "model": "Baseline",
+      "feature": "^VIX_ret_1",
+      "path": "sequence",
+      "raw_weight": 16.404857635498047,
+      "activity": 1.0172432661056519,
+      "effective_weight": 16.68773078918457,
+      "weight_share": 0.019354185089468956
+    },
+    {
+      "model": "Baseline",
+      "feature": "residual_oil_1",
+      "path": "sequence",
+      "raw_weight": 16.842023849487305,
+      "activity": 0.9851609468460083,
+      "effective_weight": 16.592103958129883,
+      "weight_share": 0.019243279471993446
+    },
+    {
+      "model": "Baseline",
+      "feature": "CL=F_ret_5",
+      "path": "sequence",
+      "raw_weight": 16.785524368286133,
+      "activity": 0.9882575869560242,
+      "effective_weight": 16.588420867919922,
+      "weight_share": 0.01923900656402111
+    },
+    {
+      "model": "Baseline",
+      "feature": "gpr_threat",
+      "path": "sequence",
+      "raw_weight": 16.639453887939453,
+      "activity": 0.9959139823913574,
+      "effective_weight": 16.57146453857422,
+      "weight_share": 0.01921934261918068
+    },
+    {
+      "model": "Baseline",
+      "feature": "ret_5",
+      "path": "sequence",
+      "raw_weight": 16.576644897460938,
+      "activity": 0.9994908571243286,
+      "effective_weight": 16.568204879760742,
+      "weight_share": 0.01921556144952774
+    },
+    {
+      "model": "Baseline",
+      "feature": "residual_xle_1",
+      "path": "sequence",
+      "raw_weight": 16.622787475585938,
+      "activity": 0.993462085723877,
+      "effective_weight": 16.514108657836914,
+      "weight_share": 0.019152821972966194
+    },
+    {
+      "model": "Baseline",
+      "feature": "sma_5_gap",
+      "path": "sequence",
+      "raw_weight": 16.45245361328125,
+      "activity": 1.000858187675476,
+      "effective_weight": 16.46657371520996,
+      "weight_share": 0.019097691401839256
+    },
+    {
+      "model": "Baseline",
+      "feature": "shock_beta_spread",
+      "path": "sequence",
+      "raw_weight": 16.31494903564453,
+      "activity": 1.008721947669983,
+      "effective_weight": 16.457246780395508,
+      "weight_share": 0.019086873158812523
+    },
+    {
+      "model": "Baseline",
+      "feature": "corr_oil_20",
+      "path": "sequence",
+      "raw_weight": 16.293182373046875,
+      "activity": 1.0099462270736694,
+      "effective_weight": 16.455238342285156,
+      "weight_share": 0.019084544852375984
+    },
+    {
+      "model": "Baseline",
+      "feature": "ret_1",
+      "path": "sequence",
+      "raw_weight": 16.463314056396484,
+      "activity": 0.9985854029655457,
+      "effective_weight": 16.440025329589844,
+      "weight_share": 0.01906690001487732
+    },
+    {
+      "model": "Baseline",
+      "feature": "BZ=F_ret_1",
+      "path": "sequence",
+      "raw_weight": 16.41288185119629,
+      "activity": 0.9932558536529541,
+      "effective_weight": 16.30219078063965,
+      "weight_share": 0.01890704222023487
+    },
+    {
+      "model": "Baseline",
+      "feature": "xle_ret",
+      "path": "sequence",
+      "raw_weight": 16.23363494873047,
+      "activity": 1.0041579008102417,
+      "effective_weight": 16.301132202148438,
+      "weight_share": 0.018905814737081528
+    },
+    {
+      "model": "Baseline",
+      "feature": "UUP_ret_1",
+      "path": "sequence",
+      "raw_weight": 16.03449249267578,
+      "activity": 1.0165839195251465,
+      "effective_weight": 16.30040740966797,
+      "weight_share": 0.018904972821474075
+    },
+    {
+      "model": "Baseline",
+      "feature": "corr_xle_20",
+      "path": "sequence",
+      "raw_weight": 16.243974685668945,
+      "activity": 1.0020411014556885,
+      "effective_weight": 16.277130126953125,
+      "weight_share": 0.01887797750532627
+    },
+    {
+      "model": "Baseline",
+      "feature": "SPY_ret_1",
+      "path": "sequence",
+      "raw_weight": 15.798871994018555,
+      "activity": 1.0205157995224,
+      "effective_weight": 16.12299919128418,
+      "weight_share": 0.018699217587709427
+    },
+    {
+      "model": "Baseline",
+      "feature": "cl_ret",
+      "path": "sequence",
+      "raw_weight": 16.343608856201172,
+      "activity": 0.9855150580406189,
+      "effective_weight": 16.10687255859375,
+      "weight_share": 0.018680514767766
+    },
+    {
+      "model": "Baseline",
+      "feature": "BZ=F_ret_5",
+      "path": "sequence",
+      "raw_weight": 16.12935447692871,
+      "activity": 0.9940561652183533,
+      "effective_weight": 16.033483505249023,
+      "weight_share": 0.01859539933502674
+    },
+    {
+      "model": "Baseline",
+      "feature": "bz_ret",
+      "path": "sequence",
+      "raw_weight": 16.104190826416016,
+      "activity": 0.9932558536529541,
+      "effective_weight": 15.99558162689209,
+      "weight_share": 0.01855144090950489
+    },
+    {
+      "model": "Baseline",
+      "feature": "gpr_level",
+      "path": "sequence",
+      "raw_weight": 15.931564331054688,
+      "activity": 1.0034757852554321,
+      "effective_weight": 15.986939430236816,
+      "weight_share": 0.01854141801595688
+    },
+    {
+      "model": "Baseline",
+      "feature": "shock_corr_spread",
+      "path": "sequence",
+      "raw_weight": 15.877481460571289,
+      "activity": 1.005581021308899,
+      "effective_weight": 15.966094017028809,
+      "weight_share": 0.01851724274456501
+    },
+    {
+      "model": "Baseline",
+      "feature": "range_1",
+      "path": "sequence",
+      "raw_weight": 15.998638153076172,
+      "activity": 0.9971813559532166,
+      "effective_weight": 15.953543663024902,
+      "weight_share": 0.01850268617272377
+    },
+    {
+      "model": "Baseline",
+      "feature": "vix_ret",
+      "path": "sequence",
+      "raw_weight": 15.580511093139648,
+      "activity": 1.0172432661056519,
+      "effective_weight": 15.849169731140137,
+      "weight_share": 0.0183816347271204
+    },
+    {
+      "model": "Baseline",
+      "feature": "gpr_surprise",
+      "path": "sequence",
+      "raw_weight": 15.780168533325195,
+      "activity": 1.0009292364120483,
+      "effective_weight": 15.794832229614258,
+      "weight_share": 0.01831861585378647
+    },
+    {
+      "model": "Baseline",
+      "feature": "CL=F_ret_1",
+      "path": "sequence",
+      "raw_weight": 15.894132614135742,
+      "activity": 0.9855150580406189,
+      "effective_weight": 15.663907051086426,
+      "weight_share": 0.018166769295930862
+    },
+    {
+      "model": "Baseline",
+      "feature": "beta_xle_20",
+      "path": "sequence",
+      "raw_weight": 15.679556846618652,
+      "activity": 0.9935719966888428,
+      "effective_weight": 15.578768730163574,
+      "weight_share": 0.01806802861392498
+    },
+    {
+      "model": "Baseline",
+      "feature": "SPY_ret_5",
+      "path": "sequence",
+      "raw_weight": 15.299113273620605,
+      "activity": 1.0151393413543701,
+      "effective_weight": 15.530732154846191,
+      "weight_share": 0.018012315034866333
+    },
+    {
+      "model": "Baseline",
+      "feature": "prev_ret_1",
+      "path": "sequence",
+      "raw_weight": 15.284883499145508,
+      "activity": 0.9986726641654968,
+      "effective_weight": 15.264595031738281,
+      "weight_share": 0.017703654244542122
+    },
+    {
+      "model": "Baseline",
+      "feature": "ret_2",
+      "path": "sequence",
+      "raw_weight": 15.267595291137695,
+      "activity": 0.998677134513855,
+      "effective_weight": 15.247398376464844,
+      "weight_share": 0.017683709040284157
+    },
+    {
+      "model": "Baseline",
+      "feature": "prev_ret_5",
+      "path": "sequence",
+      "raw_weight": 15.250187873840332,
+      "activity": 0.9994929432868958,
+      "effective_weight": 15.24245548248291,
+      "weight_share": 0.017677975818514824
+    },
+    {
+      "model": "Baseline",
+      "feature": "sma_20_gap",
+      "path": "sequence",
+      "raw_weight": 15.311583518981934,
+      "activity": 0.9953536987304688,
+      "effective_weight": 15.24044132232666,
+      "weight_share": 0.01767564006149769
+    },
+    {
+      "model": "Baseline",
+      "feature": "vol_5",
+      "path": "sequence",
+      "raw_weight": 15.082380294799805,
+      "activity": 0.9975267648696899,
+      "effective_weight": 15.04507827758789,
+      "weight_share": 0.017449060454964638
+    },
+    {
+      "model": "Baseline",
+      "feature": "statement_hormuz_weight_3d",
+      "path": "sequence",
+      "raw_weight": 15.388957023620605,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    },
+    {
+      "model": "Baseline",
+      "feature": "sector_fill_used",
+      "path": "sequence",
+      "raw_weight": 16.052431106567383,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    },
+    {
+      "model": "Baseline",
+      "feature": "statement_strike_weight_3d",
+      "path": "sequence",
+      "raw_weight": 15.643136978149414,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    },
+    {
+      "model": "Baseline",
+      "feature": "official_conflict_escalation_weight",
+      "path": "sequence",
+      "raw_weight": 15.700674057006836,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    },
+    {
+      "model": "Baseline",
+      "feature": "official_event_weight",
+      "path": "sequence",
+      "raw_weight": 16.7228946685791,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    },
+    {
+      "model": "Baseline",
+      "feature": "official_shipping_enforcement_weight",
+      "path": "sequence",
+      "raw_weight": 15.453184127807617,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    },
+    {
+      "model": "Baseline",
+      "feature": "official_sanctions_oil_weight",
+      "path": "sequence",
+      "raw_weight": 16.062910079956055,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    }
+  ],
+  "sent_sequence_weights": [
+    {
+      "model": "Sent",
+      "feature": "statement_shipping_weight_3d",
+      "path": "sequence",
+      "raw_weight": 16.357135772705078,
+      "activity": 1.5377660989761353,
+      "effective_weight": 25.1534481048584,
+      "weight_share": 0.028263689950108528
+    },
+    {
+      "model": "Sent",
+      "feature": "statement_event_weight_3d",
+      "path": "sequence",
+      "raw_weight": 16.538515090942383,
+      "activity": 1.4002894163131714,
+      "effective_weight": 23.158708572387695,
+      "weight_share": 0.026022298261523247
+    },
+    {
+      "model": "Sent",
+      "feature": "statement_event_weight",
+      "path": "sequence",
+      "raw_weight": 15.794500350952148,
+      "activity": 1.3983324766159058,
+      "effective_weight": 22.085962295532227,
+      "weight_share": 0.024816906079649925
+    },
+    {
+      "model": "Sent",
+      "feature": "statement_sanctions_weight_3d",
+      "path": "sequence",
+      "raw_weight": 15.985859870910645,
+      "activity": 1.368342399597168,
+      "effective_weight": 21.874130249023438,
+      "weight_share": 0.02457888051867485
+    },
+    {
+      "model": "Sent",
+      "feature": "filing_periodic_share",
+      "path": "sequence",
+      "raw_weight": 18.153947830200195,
+      "activity": 1.099920630455017,
+      "effective_weight": 19.9679012298584,
+      "weight_share": 0.022436946630477905
+    },
+    {
+      "model": "Sent",
+      "feature": "filing_count_5d",
+      "path": "sequence",
+      "raw_weight": 18.00409698486328,
+      "activity": 1.0439082384109497,
+      "effective_weight": 18.79462432861328,
+      "weight_share": 0.021118592470884323
+    },
+    {
+      "model": "Sent",
+      "feature": "shock_corr_spread",
+      "path": "sequence",
+      "raw_weight": 18.019737243652344,
+      "activity": 1.005581021308899,
+      "effective_weight": 18.12030601501465,
+      "weight_share": 0.02036089450120926
+    },
+    {
+      "model": "Sent",
+      "feature": "corr_xle_20",
+      "path": "sequence",
+      "raw_weight": 18.050161361694336,
+      "activity": 1.0020411014556885,
+      "effective_weight": 18.087003707885742,
+      "weight_share": 0.02032347396016121
+    },
+    {
+      "model": "Sent",
+      "feature": "shock_beta_spread",
+      "path": "sequence",
+      "raw_weight": 17.772891998291016,
+      "activity": 1.008721947669983,
+      "effective_weight": 17.927906036376953,
+      "weight_share": 0.02014470472931862
+    },
+    {
+      "model": "Sent",
+      "feature": "macd_diff",
+      "path": "sequence",
+      "raw_weight": 17.618167877197266,
+      "activity": 1.0149544477462769,
+      "effective_weight": 17.881637573242188,
+      "weight_share": 0.020092714577913284
+    },
+    {
+      "model": "Sent",
+      "feature": "ret_2",
+      "path": "sequence",
+      "raw_weight": 17.865676879882812,
+      "activity": 0.998677134513855,
+      "effective_weight": 17.842042922973633,
+      "weight_share": 0.020048223435878754
+    },
+    {
+      "model": "Sent",
+      "feature": "^VIX_ret_5",
+      "path": "sequence",
+      "raw_weight": 17.1278076171875,
+      "activity": 1.0346349477767944,
+      "effective_weight": 17.72102928161621,
+      "weight_share": 0.019912246614694595
+    },
+    {
+      "model": "Sent",
+      "feature": "UUP_ret_5",
+      "path": "sequence",
+      "raw_weight": 17.493436813354492,
+      "activity": 1.0100347995758057,
+      "effective_weight": 17.66897964477539,
+      "weight_share": 0.019853761419653893
+    },
+    {
+      "model": "Sent",
+      "feature": "gpr_surprise",
+      "path": "sequence",
+      "raw_weight": 17.643056869506836,
+      "activity": 1.0009292364120483,
+      "effective_weight": 17.65945053100586,
+      "weight_share": 0.019843053072690964
+    },
+    {
+      "model": "Sent",
+      "feature": "avg_text_length",
+      "path": "sequence",
+      "raw_weight": 16.845645904541016,
+      "activity": 1.0458513498306274,
+      "effective_weight": 17.6180419921875,
+      "weight_share": 0.019796524196863174
+    },
+    {
+      "model": "Sent",
+      "feature": "beta_xle_20",
+      "path": "sequence",
+      "raw_weight": 17.724637985229492,
+      "activity": 0.9935719966888428,
+      "effective_weight": 17.61070442199707,
+      "weight_share": 0.019788280129432678
+    },
+    {
+      "model": "Sent",
+      "feature": "corr_oil_20",
+      "path": "sequence",
+      "raw_weight": 17.421428680419922,
+      "activity": 1.0099462270736694,
+      "effective_weight": 17.59470558166504,
+      "weight_share": 0.01977030374109745
+    },
+    {
+      "model": "Sent",
+      "feature": "filing_8k_share",
+      "path": "sequence",
+      "raw_weight": 16.776145935058594,
+      "activity": 1.0461567640304565,
+      "effective_weight": 17.550477981567383,
+      "weight_share": 0.01972060650587082
+    },
+    {
+      "model": "Sent",
+      "feature": "vol_10",
+      "path": "sequence",
+      "raw_weight": 17.5413761138916,
+      "activity": 0.9954142570495605,
+      "effective_weight": 17.460935592651367,
+      "weight_share": 0.01961999200284481
+    },
+    {
+      "model": "Sent",
+      "feature": "UUP_ret_1",
+      "path": "sequence",
+      "raw_weight": 17.053688049316406,
+      "activity": 1.0165839195251465,
+      "effective_weight": 17.336505889892578,
+      "weight_share": 0.019480176270008087
+    },
+    {
+      "model": "Sent",
+      "feature": "prev_ret_5",
+      "path": "sequence",
+      "raw_weight": 17.331880569458008,
+      "activity": 0.9994929432868958,
+      "effective_weight": 17.323091506958008,
+      "weight_share": 0.01946510374546051
+    },
+    {
+      "model": "Sent",
+      "feature": "CL=F_ret_5",
+      "path": "sequence",
+      "raw_weight": 17.477075576782227,
+      "activity": 0.9882575869560242,
+      "effective_weight": 17.271852493286133,
+      "weight_share": 0.01940752938389778
+    },
+    {
+      "model": "Sent",
+      "feature": "gpr_threat_share",
+      "path": "sequence",
+      "raw_weight": 17.316728591918945,
+      "activity": 0.9965594410896301,
+      "effective_weight": 17.25714874267578,
+      "weight_share": 0.019391007721424103
+    },
+    {
+      "model": "Sent",
+      "feature": "gpr_level",
+      "path": "sequence",
+      "raw_weight": 17.143905639648438,
+      "activity": 1.0034757852554321,
+      "effective_weight": 17.203495025634766,
+      "weight_share": 0.019330719485878944
+    },
+    {
+      "model": "Sent",
+      "feature": "vol_5",
+      "path": "sequence",
+      "raw_weight": 17.127696990966797,
+      "activity": 0.9975267648696899,
+      "effective_weight": 17.085336685180664,
+      "weight_share": 0.019197950139641762
+    },
+    {
+      "model": "Sent",
+      "feature": "SPY_ret_5",
+      "path": "sequence",
+      "raw_weight": 16.822463989257812,
+      "activity": 1.0151393413543701,
+      "effective_weight": 17.077144622802734,
+      "weight_share": 0.019188744947314262
+    },
+    {
+      "model": "Sent",
+      "feature": "ret_10",
+      "path": "sequence",
+      "raw_weight": 17.085792541503906,
+      "activity": 0.9979932904243469,
+      "effective_weight": 17.05150604248047,
+      "weight_share": 0.019159937277436256
+    },
+    {
+      "model": "Sent",
+      "feature": "beta_oil_20",
+      "path": "sequence",
+      "raw_weight": 16.984790802001953,
+      "activity": 1.0038843154907227,
+      "effective_weight": 17.050765991210938,
+      "weight_share": 0.01915910467505455
+    },
+    {
+      "model": "Sent",
+      "feature": "residual_xle_1",
+      "path": "sequence",
+      "raw_weight": 17.10611343383789,
+      "activity": 0.993462085723877,
+      "effective_weight": 16.99427604675293,
+      "weight_share": 0.019095629453659058
+    },
+    {
+      "model": "Sent",
+      "feature": "filing_count",
+      "path": "sequence",
+      "raw_weight": 16.312397003173828,
+      "activity": 1.0409504175186157,
+      "effective_weight": 16.980396270751953,
+      "weight_share": 0.019080033525824547
+    },
+    {
+      "model": "Sent",
+      "feature": "vix_ret",
+      "path": "sequence",
+      "raw_weight": 16.526086807250977,
+      "activity": 1.0172432661056519,
+      "effective_weight": 16.811050415039062,
+      "weight_share": 0.01888974756002426
+    },
+    {
+      "model": "Sent",
+      "feature": "gpr_threat",
+      "path": "sequence",
+      "raw_weight": 16.876821517944336,
+      "activity": 0.9959139823913574,
+      "effective_weight": 16.807863235473633,
+      "weight_share": 0.01888616755604744
+    },
+    {
+      "model": "Sent",
+      "feature": "cl_ret",
+      "path": "sequence",
+      "raw_weight": 16.941822052001953,
+      "activity": 0.9855150580406189,
+      "effective_weight": 16.696420669555664,
+      "weight_share": 0.01876094378530979
+    },
+    {
+      "model": "Sent",
+      "feature": "SPY_ret_1",
+      "path": "sequence",
+      "raw_weight": 16.237091064453125,
+      "activity": 1.0205157995224,
+      "effective_weight": 16.570207595825195,
+      "weight_share": 0.018619125708937645
+    },
+    {
+      "model": "Sent",
+      "feature": "BZ=F_ret_5",
+      "path": "sequence",
+      "raw_weight": 16.622896194458008,
+      "activity": 0.9940561652183533,
+      "effective_weight": 16.524091720581055,
+      "weight_share": 0.01856730692088604
+    },
+    {
+      "model": "Sent",
+      "feature": "residual_oil_1",
+      "path": "sequence",
+      "raw_weight": 16.742998123168945,
+      "activity": 0.9851609468460083,
+      "effective_weight": 16.494548797607422,
+      "weight_share": 0.018534110859036446
+    },
+    {
+      "model": "Sent",
+      "feature": "sma_5_gap",
+      "path": "sequence",
+      "raw_weight": 16.470516204833984,
+      "activity": 1.000858187675476,
+      "effective_weight": 16.484651565551758,
+      "weight_share": 0.018522989004850388
+    },
+    {
+      "model": "Sent",
+      "feature": "novelty_mean",
+      "path": "sequence",
+      "raw_weight": 15.928842544555664,
+      "activity": 1.0348821878433228,
+      "effective_weight": 16.48447608947754,
+      "weight_share": 0.01852279342710972
+    },
+    {
+      "model": "Sent",
+      "feature": "ret_5",
+      "path": "sequence",
+      "raw_weight": 16.404754638671875,
+      "activity": 0.9994908571243286,
+      "effective_weight": 16.39640235900879,
+      "weight_share": 0.01842382922768593
+    },
+    {
+      "model": "Sent",
+      "feature": "rsi_14",
+      "path": "sequence",
+      "raw_weight": 16.35867691040039,
+      "activity": 1.0011417865753174,
+      "effective_weight": 16.377355575561523,
+      "weight_share": 0.018402427434921265
+    },
+    {
+      "model": "Sent",
+      "feature": "ret_1",
+      "path": "sequence",
+      "raw_weight": 16.361764907836914,
+      "activity": 0.9985854029655457,
+      "effective_weight": 16.338619232177734,
+      "weight_share": 0.018358901143074036
+    },
+    {
+      "model": "Sent",
+      "feature": "^VIX_ret_1",
+      "path": "sequence",
+      "raw_weight": 15.868041038513184,
+      "activity": 1.0172432661056519,
+      "effective_weight": 16.141658782958984,
+      "weight_share": 0.018137585371732712
+    },
+    {
+      "model": "Sent",
+      "feature": "prev_ret_1",
+      "path": "sequence",
+      "raw_weight": 16.143306732177734,
+      "activity": 0.9986726641654968,
+      "effective_weight": 16.12187957763672,
+      "weight_share": 0.018115360289812088
+    },
+    {
+      "model": "Sent",
+      "feature": "range_1",
+      "path": "sequence",
+      "raw_weight": 16.144685745239258,
+      "activity": 0.9971813559532166,
+      "effective_weight": 16.099180221557617,
+      "weight_share": 0.01808985508978367
+    },
+    {
+      "model": "Sent",
+      "feature": "BZ=F_ret_1",
+      "path": "sequence",
+      "raw_weight": 16.01991081237793,
+      "activity": 0.9932558536529541,
+      "effective_weight": 15.911870002746582,
+      "weight_share": 0.017879383638501167
+    },
+    {
+      "model": "Sent",
+      "feature": "xle_ret",
+      "path": "sequence",
+      "raw_weight": 15.766824722290039,
+      "activity": 1.0041579008102417,
+      "effective_weight": 15.832381248474121,
+      "weight_share": 0.017790066078305244
+    },
+    {
+      "model": "Sent",
+      "feature": "sma_20_gap",
+      "path": "sequence",
+      "raw_weight": 15.903005599975586,
+      "activity": 0.9953536987304688,
+      "effective_weight": 15.829115867614746,
+      "weight_share": 0.01778639666736126
+    },
+    {
+      "model": "Sent",
+      "feature": "bz_ret",
+      "path": "sequence",
+      "raw_weight": 15.761425018310547,
+      "activity": 0.9932558536529541,
+      "effective_weight": 15.65512752532959,
+      "weight_share": 0.017590895295143127
+    },
+    {
+      "model": "Sent",
+      "feature": "volume_z_20",
+      "path": "sequence",
+      "raw_weight": 15.439170837402344,
+      "activity": 1.0007224082946777,
+      "effective_weight": 15.450324058532715,
+      "weight_share": 0.017360767349600792
+    },
+    {
+      "model": "Sent",
+      "feature": "CL=F_ret_1",
+      "path": "sequence",
+      "raw_weight": 15.652183532714844,
+      "activity": 0.9855150580406189,
+      "effective_weight": 15.42546272277832,
+      "weight_share": 0.017332831397652626
+    },
+    {
+      "model": "Sent",
+      "feature": "ret_3",
+      "path": "sequence",
+      "raw_weight": 15.090465545654297,
+      "activity": 1.0002422332763672,
+      "effective_weight": 15.094120979309082,
+      "weight_share": 0.016960518434643745
+    },
+    {
+      "model": "Sent",
+      "feature": "sector_fill_used",
+      "path": "sequence",
+      "raw_weight": 15.951838493347168,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    },
+    {
+      "model": "Sent",
+      "feature": "statement_hormuz_weight_3d",
+      "path": "sequence",
+      "raw_weight": 14.73635482788086,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    },
+    {
+      "model": "Sent",
+      "feature": "official_shipping_enforcement_weight",
+      "path": "sequence",
+      "raw_weight": 16.776853561401367,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    },
+    {
+      "model": "Sent",
+      "feature": "official_event_weight",
+      "path": "sequence",
+      "raw_weight": 16.04581069946289,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    },
+    {
+      "model": "Sent",
+      "feature": "statement_strike_weight_3d",
+      "path": "sequence",
+      "raw_weight": 14.851117134094238,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    },
+    {
+      "model": "Sent",
+      "feature": "official_conflict_escalation_weight",
+      "path": "sequence",
+      "raw_weight": 15.742338180541992,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    },
+    {
+      "model": "Sent",
+      "feature": "official_sanctions_oil_weight",
+      "path": "sequence",
+      "raw_weight": 15.729534149169922,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    }
+  ],
+  "sent_static_weights": [
+    {
+      "model": "Sent",
+      "feature": "supply_disruption_share",
+      "path": "static",
+      "raw_weight": 4.819360539792321,
+      "activity": 1.0325833559036255,
+      "effective_weight": 4.976391479488263,
+      "weight_share": 0.07706189595066493
+    },
+    {
+      "model": "Sent",
+      "feature": "statement_sanctions_alignment",
+      "path": "static",
+      "raw_weight": 5.033325742443502,
+      "activity": 0.9847239851951599,
+      "effective_weight": 4.9564365838843525,
+      "weight_share": 0.07675288447215217
+    },
+    {
+      "model": "Sent",
+      "feature": "supply_chain_intensity",
+      "path": "static",
+      "raw_weight": 4.553900752623513,
+      "activity": 1.046526551246643,
+      "effective_weight": 4.765778049362578,
+      "weight_share": 0.0738004422838752
+    },
+    {
+      "model": "Sent",
+      "feature": "agent_company_exposure",
+      "path": "static",
+      "raw_weight": 4.523960072004046,
+      "activity": 1.0367108583450317,
+      "effective_weight": 4.6900385293659665,
+      "weight_share": 0.07262757816468568
+    },
+    {
+      "model": "Sent",
+      "feature": "geopolitics_share",
+      "path": "static",
+      "raw_weight": 4.396340537382201,
+      "activity": 1.052777647972107,
+      "effective_weight": 4.628369050629662,
+      "weight_share": 0.07167259562898744
+    },
+    {
+      "model": "Sent",
+      "feature": "agent_market_stress",
+      "path": "static",
+      "raw_weight": 4.378444782032921,
+      "activity": 1.0105763673782349,
+      "effective_weight": 4.424752822593017,
+      "weight_share": 0.06851949711503363
+    },
+    {
+      "model": "Sent",
+      "feature": "statement_market_confirmation",
+      "path": "static",
+      "raw_weight": 4.4394066833244175,
+      "activity": 0.9847292900085449,
+      "effective_weight": 4.371613791329243,
+      "weight_share": 0.06769661279914996
+    },
+    {
+      "model": "Sent",
+      "feature": "agent_political_risk",
+      "path": "static",
+      "raw_weight": 4.3045967832501715,
+      "activity": 0.993667483329773,
+      "effective_weight": 4.277337852361634,
+      "weight_share": 0.06623670301726917
+    },
+    {
+      "model": "Sent",
+      "feature": "supply_risk_intensity",
+      "path": "static",
+      "raw_weight": 4.0962981203848035,
+      "activity": 1.0342413187026978,
+      "effective_weight": 4.236560769826161,
+      "weight_share": 0.06560524962288239
+    },
+    {
+      "model": "Sent",
+      "feature": "sanctions_share",
+      "path": "static",
+      "raw_weight": 3.9287512874167545,
+      "activity": 1.0742440223693848,
+      "effective_weight": 4.220437585883473,
+      "weight_share": 0.065355574104285
+    },
+    {
+      "model": "Sent",
+      "feature": "agent_disclosure_signal",
+      "path": "static",
+      "raw_weight": 3.882873065675787,
+      "activity": 1.044664978981018,
+      "effective_weight": 4.056301509540157,
+      "weight_share": 0.06281384536589006
+    },
+    {
+      "model": "Sent",
+      "feature": "agent_uncertainty_confirmation",
+      "path": "static",
+      "raw_weight": 3.9438562864310125,
+      "activity": 0.9890444278717041,
+      "effective_weight": 3.900649084421384,
+      "weight_share": 0.060403490184146
+    },
+    {
+      "model": "Sent",
+      "feature": "agent_war_alignment",
+      "path": "static",
+      "raw_weight": 3.817928315309828,
+      "activity": 0.9986888766288757,
+      "effective_weight": 3.812922540266348,
+      "weight_share": 0.05904500103680867
+    },
+    {
+      "model": "Sent",
+      "feature": "statement_shipping_alignment",
+      "path": "static",
+      "raw_weight": 3.7081974257066124,
+      "activity": 0.9846264719963074,
+      "effective_weight": 3.651189348739291,
+      "weight_share": 0.05654048216432866
+    },
+    {
+      "model": "Sent",
+      "feature": "shipping_share",
+      "path": "static",
+      "raw_weight": 3.4375024893076267,
+      "activity": 1.0495330095291138,
+      "effective_weight": 3.607772332866854,
+      "weight_share": 0.05586814808984098
+    },
+    {
+      "model": "Sent",
+      "feature": "negative_share",
+      "path": "static",
+      "raw_weight": 3.2828180673970473,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    },
+    {
+      "model": "Sent",
+      "feature": "positive_share",
+      "path": "static",
+      "raw_weight": 5.063521102272185,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    },
+    {
+      "model": "Sent",
+      "feature": "sentiment_sum",
+      "path": "static",
+      "raw_weight": 4.280353334657574,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    },
+    {
+      "model": "Sent",
+      "feature": "statement_hormuz_alignment",
+      "path": "static",
+      "raw_weight": 5.0534329294757745,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    },
+    {
+      "model": "Sent",
+      "feature": "geopolitics_sentiment",
+      "path": "static",
+      "raw_weight": 4.824538750251466,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    },
+    {
+      "model": "Sent",
+      "feature": "avg_sentiment",
+      "path": "static",
+      "raw_weight": 4.574857087947439,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    },
+    {
+      "model": "Sent",
+      "feature": "statement_strike_alignment",
+      "path": "static",
+      "raw_weight": 4.344714456704194,
+      "activity": 0.0,
+      "effective_weight": 0.0,
+      "weight_share": 0.0
+    }
+  ]
+}
