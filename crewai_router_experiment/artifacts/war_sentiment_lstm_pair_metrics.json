@@ -1,0 +1,121 @@
+{
+  "project_name": "war_sentiment_lstm_pair",
+  "target": "7-day excess return vs XLE with 1.00% threshold",
+  "sequence_length": 20,
+  "history_start": "2018-01-01",
+  "baseline_sequence_feature_count": 57,
+  "sentiment_static_feature_count": 22,
+  "baseline_sequence_features": [
+    "BZ=F_ret_1",
+    "BZ=F_ret_5",
+    "CL=F_ret_1",
+    "CL=F_ret_5",
+    "SPY_ret_1",
+    "SPY_ret_5",
+    "UUP_ret_1",
+    "UUP_ret_5",
+    "^VIX_ret_1",
+    "^VIX_ret_5",
+    "avg_text_length",
+    "beta_oil_20",
+    "beta_xle_20",
+    "bz_ret",
+    "cl_ret",
+    "corr_oil_20",
+    "corr_xle_20",
+    "filing_8k_share",
+    "filing_count",
+    "filing_count_5d",
+    "filing_periodic_share",
+    "gpr_level",
+    "gpr_surprise",
+    "gpr_threat",
+    "gpr_threat_share",
+    "macd_diff",
+    "novelty_mean",
+    "official_conflict_escalation_weight",
+    "official_event_weight",
+    "official_sanctions_oil_weight",
+    "official_shipping_enforcement_weight",
+    "prev_ret_1",
+    "prev_ret_5",
+    "range_1",
+    "residual_oil_1",
+    "residual_xle_1",
+    "ret_1",
+    "ret_10",
+    "ret_2",
+    "ret_3",
+    "ret_5",
+    "rsi_14",
+    "shock_beta_spread",
+    "shock_corr_spread",
+    "sma_20_gap",
+    "sma_5_gap",
+    "statement_event_weight",
+    "statement_event_weight_3d",
+    "statement_hormuz_weight_3d",
+    "statement_sanctions_weight_3d",
+    "statement_shipping_weight_3d",
+    "statement_strike_weight_3d",
+    "vix_ret",
+    "vol_10",
+    "vol_5",
+    "volume_z_20",
+    "xle_ret"
+  ],
+  "sentiment_static_features": [
+    "agent_company_exposure",
+    "agent_disclosure_signal",
+    "agent_market_stress",
+    "agent_political_risk",
+    "agent_uncertainty_confirmation",
+    "agent_war_alignment",
+    "avg_sentiment",
+    "geopolitics_sentiment",
+    "geopolitics_share",
+    "negative_share",
+    "positive_share",
+    "sanctions_share",
+    "sentiment_sum",
+    "shipping_share",
+    "statement_hormuz_alignment",
+    "statement_market_confirmation",
+    "statement_sanctions_alignment",
+    "statement_shipping_alignment",
+    "statement_strike_alignment",
+    "supply_chain_intensity",
+    "supply_disruption_share",
+    "supply_risk_intensity"
+  ],
+  "baseline_metrics": {
+    "overall": {
+      "accuracy": 0.5125348189415042,
+      "n": 718
+    },
+    "pre_war": {
+      "accuracy": 0.6144578313253012,
+      "n": 83
+    },
+    "war": {
+      "accuracy": 0.6067415730337079,
+      "n": 89
+    }
+  },
+  "sentiment_metrics": {
+    "overall": {
+      "accuracy": 0.5543175487465181,
+      "n": 718
+    },
+    "pre_war": {
+      "accuracy": 0.6024096385542169,
+      "n": 83
+    },
+    "war": {
+      "accuracy": 0.6966292134831461,
+      "n": 89
+    }
+  },
+  "selected_pair_metrics_path": "artifacts/war_sentiment_lstm_pair_selected_metrics.json",
+  "note": "Raw baseline_lstm and raw sentiment_lstm training metrics. The README headline Sent result uses the selected 25% baseline plus 75% sentiment probability blend saved separately."
+}

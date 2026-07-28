@@ -1,0 +1,7 @@
+model,source_candidate,role,deployment_safe,overall_accuracy,overall_predictions,overall_total_possible,overall_coverage_share,pre_war_accuracy,pre_war_predictions,pre_war_total_possible,pre_war_coverage_share,war_accuracy,war_predictions,war_total_possible,war_coverage_share
+Market LSTM,saved_baseline_lstm,benchmark,True,0.5125348189415042,718,718,1.0,0.6144578313253012,83,83,1.0,0.6067415730337079,89,89,1.0
+Sentiment LSTM,saved_sent_lstm,benchmark,True,0.5543175487465181,718,718,1.0,0.6024096385542169,83,83,1.0,0.6966292134831461,89,89,1.0
+Market-Sentiment Blend,saved_selected_25_75_blend,benchmark,True,0.5348189415041783,718,718,1.0,0.6385542168674698,83,83,1.0,0.7078651685393258,89,89,1.0
+CrewAI Calibrated Router,crewai_ticker_calibrated_event_gate_agent,crewai_router,True,0.6155988857938719,718,718,1.0,0.6506024096385542,83,83,1.0,0.7528089887640449,89,89,1.0
+CrewAI High-Confidence Router,crewai_selective_consensus_sharp_0p30,diagnostic_selective,True,0.7403846153846154,104,718,0.14484679665738162,1.0,15,83,0.18072289156626506,0.9333333333333333,15,89,0.16853932584269662
+Post-Hoc Calibration Check,diagnostic_crewai_full_sample_ticker_calibrated_agent,diagnostic_post_hoc,False,0.6615598885793872,718,718,1.0,0.6626506024096386,83,83,1.0,0.7191011235955056,89,89,1.0
