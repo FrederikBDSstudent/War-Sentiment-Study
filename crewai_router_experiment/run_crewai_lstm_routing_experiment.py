@@ -932,7 +932,7 @@ class CrewAILSTMRoutingFlow(Flow):
         specs.append(diagnostic_ticker_spec)
         frames.append(_candidate_frame(data, diagnostic_ticker_spec, diagnostic_ticker_probability))
 
-        consensus_fallback_probability, consensus_fallback_mask = _consensus_probability(
+        consensus_fallback_probability, _ = _consensus_probability(
             probabilities=[
                 event_gate_selected_probability,
                 regularized_clean_probability,

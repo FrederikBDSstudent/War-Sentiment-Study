@@ -18,3 +18,5 @@ The script uses the saved Market LSTM and Sentiment LSTM predictions, adds marke
 | CrewAI Calibrated Router | `61.56%` on `718 / 718` | `65.06%` on `83 / 83` | `75.28%` on `89 / 89` |
 
 Outputs are written to `artifacts/`.
+
+The router shown above was selected from multiple candidates using the same overall evaluation period shown in the table. Its reported accuracy is therefore exploratory: evaluating the selected approach on a new untouched period is needed to assess whether the gain generalizes. The `deployment_safe` label in the output describes the candidate procedure; it does not correct for this selection.

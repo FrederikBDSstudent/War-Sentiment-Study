@@ -21,7 +21,6 @@ TEST_START = "2025-01-01"
 WAR_SPLIT_DATE = "2025-06-13"
 IRAN_WAR_WINDOW_DAYS = 60
 
-SEQUENCE_LENGTH = 20
 RANDOM_SEED = 42
 MARKET_CLOSE_HOUR = 16
 
@@ -44,14 +43,6 @@ FACTOR_TICKERS = {
     "^VIX": "VIX",
     "UUP": "US Dollar ETF",
 }
-
-PRIORITY_DOMAINS = [
-    "reuters.com",
-    "apnews.com",
-    "businesswire.com",
-    "globenewswire.com",
-    "prnewswire.com",
-]
 
 BENCHMARK_TICKER = "XLE"
 EXCESS_RETURN_THRESHOLD = 0.0025

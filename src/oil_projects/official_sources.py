@@ -56,33 +56,10 @@ OFFICIAL_EVENT_ROWS = [
     },
 ]
 
-OFFICIAL_CONTEXT_ROWS = [
-    {
-        "title": "Fact Sheet: President Donald J. Trump Restores Maximum Pressure on Iran",
-        "url": "https://www.whitehouse.gov/fact-sheets/2025/02/fact-sheet-president-donald-j-trump-restores-maximum-pressure-on-iran/",
-        "source_type": "white_house",
-    },
-    {
-        "title": "EIA World Oil Transit Chokepoints",
-        "url": "https://www.eia.gov/international/content/analysis/special_topics/World_Oil_Transit_Chokepoints/",
-        "source_type": "eia",
-    },
-    {
-        "title": "EIA Short-Term Energy Outlook, July 2025",
-        "url": "https://www.eia.gov/outlooks/steo/archives/jul25.pdf",
-        "source_type": "eia",
-    },
-]
-
-
 def load_official_event_frame() -> pd.DataFrame:
     frame = pd.DataFrame(OFFICIAL_EVENT_ROWS)
     frame["date"] = pd.to_datetime(frame["date"])
     return frame.sort_values("date").reset_index(drop=True)
-
-
-def load_official_context_frame() -> pd.DataFrame:
-    return pd.DataFrame(OFFICIAL_CONTEXT_ROWS)
 
 
 def build_official_event_features() -> pd.DataFrame:

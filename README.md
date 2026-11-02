@@ -365,6 +365,18 @@ The training notebook follows the standard deep-learning workflow, but it is gro
 
 ---
 
+## CrewAI Router Experiment
+
+The [CrewAI router experiment](./crewai_router_experiment/README.md) reports an exploratory improvement over the saved LSTM blend. Its winning candidate was selected on the same evaluation period; a separate untouched evaluation is needed to verify the gain.
+
+---
+
+## Code Maintenance
+
+See [CODE_USAGE.md](./CODE_USAGE.md) for the study workflow, retained files, and cleanup validation.
+
+---
+
 ## Files Produced
 
 <table>

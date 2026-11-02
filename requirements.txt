@@ -8,7 +8,6 @@ requests
 beautifulsoup4
 transformers
 vaderSentiment
-xgboost
 plotly
 xlrd
 ipykernel
